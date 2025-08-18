@@ -10,8 +10,8 @@ Letzte Aktualisierung |today|
 .. note::
    Diese Seiten sind noch in Bearbeitung.
 
-.. image:: /pics/Screen_Overview.png
-             :scale: 50%
+.. image:: /pics/Wind_Sensor_Yachta_tr.png
+             :scale: 100%
 
 Der Windsensor Yachta dient zur Messung der Windgeschwindigkeit und der Windrichtung auf Booten. Er wird am Mast installiert und mit 12V versorgt. Die Datenübertragung der NMEA0183 Telegramme erfolgt drahtlos per WiFi. Im Windsensor befindet sich ein Access Point und ein kleiner Webserver. Als Messwertanzeige dient ein Handy mit einen Webbrowser. Es gibt ebenfalls eine Android-App mit der die Daten angezeigt werden können. Die Messdaten lassen sich auch in anderen Programmen wie `SignalK`_, `AvNav`_, `OpenCPN`_, `Navionics`_ oder auf Geräte wie das `OBP60`_ oder den `OBP-Plotter`_ übertragen und angezeigen.
 

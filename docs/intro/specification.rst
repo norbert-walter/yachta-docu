@@ -1,35 +1,33 @@
 Technische Daten
 ================
 
-.. image:: ../pics/OBP60_OBP_Logo_tr.png
-   :scale: 30%
+.. image:: ../pics/Wind_Sensor_Yachta_tr.png
+   :scale: 100%
 
 Funktionen
 ----------
 
-* E-Paper Display (tageslichttauglich)
-* Numerische Anzeigeseiten für 1, 2, 3 und 4 Werte (Werte frei wählbar)
-* Grafische Anzeigeseiten (feste Werte)
-* Trendanzeige für Werte
-* Grenzwertüberschreitung akustisch und optisch
-* 6 Sensor-Tasten (geeignet für Wischgesten)
-* Akustischer Signalgeber (Buzzer)
-* Optischer Signalgeber (RGB-LED)
-* LED-Displaybeleuchtung (RGB-LEDs)
-* NMEA2000 (vollduplex, isoliert)
-* NMEA0183 (RX oder TX, konfigurierbar, isoliert)
-* NMEA2000/NMEA0183 Gateway (bidirektional)
-* I2C (isoliert)
-* 1Wire (nicht isoliert)
-* Spannungsausgang 5V (max. 200mA) für externe Sensorik
-* USB-C (OTG, Debug, NMEA0183)
-* Batteriemonitor (12V-Spannungsmessung)
-* Umgebungssensor BMP280 (Temperatur, Luftdruck)
-* GPS-Empfäger (GPS, Glonass, Baidu, interne oder externe GPS-Antenne)
-* WiFi 2.4GHz (HTTP, TCP, UDP)
-* Bluetooth (aktuell ungenutzt)
-* Batterie-Tiefentladeschutz < 9.0V
-* Low Power Modus
+* Windspeed 0…75 kn
+* Windrichtung 0…360°
+* Winkelauflösung 0,1°
+* Mechanisches Funktionsprinzip
+* Verschleißfreie magnetische Sensorik
+* Gewicht ca. 210g
+* Versorgungsspannung 7...25V / 0,36 W
+* 12V Versorgung  über Toplicht möglich
+* Wetterfest und UV-stabil
+* Robuste Mechanik (3 Kugellager)
+* Ohne Spezialteile aus Metall
+* Keine Kabel für Sensorsignale notwendig
+* Signalübertragung per WiFi über NMEA0183
+* TCP-Server Port 6666
+* Aktualisierungsrate 1 Messwert pro Sekunde
+* Kein Einbauinstrument notwendig
+* Visualisierung auf einem  Laptop, Handy oder Tablett
+* Webinterface zur Bedienung
+* Keine Extrasoftware notwendig (Web-Browser ausreichend)
+* Firmwareupdate via Internet möglich
+* Datenübertragung zu AvNav, OpenCPN, SignalK, OpenPlotter und Navionics möglich 
 
 
 Aufbau
