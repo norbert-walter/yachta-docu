@@ -10,24 +10,29 @@ Funktionen
 * Windspeed 0…75 kn
 * Windrichtung 0…360°
 * Winkelauflösung 0,1°
+* Integrierter Temperatursensor -25...100 °C
 * Mechanisches Funktionsprinzip
 * Verschleißfreie magnetische Sensorik
+* Robuste Mechanik (3 Kugellager)
 * Gewicht ca. 210g
 * Versorgungsspannung 7...25V / 0,36 W
-* 12V Versorgung  über Toplicht möglich
+* 12V Versorgung über Toplicht möglich
 * Wetterfest und UV-stabil
-* Robuste Mechanik (3 Kugellager)
-* Ohne Spezialteile aus Metall
+* Keine Spezialteile aus Metall erforderlich
 * Keine Kabel für Sensorsignale notwendig
 * Signalübertragung per WiFi über NMEA0183
 * TCP-Server Port 6666
+* JSON Datenausgabe
 * Aktualisierungsrate 1 Messwert pro Sekunde
 * Kein Einbauinstrument notwendig
 * Visualisierung auf einem  Laptop, Handy oder Tablett
 * Webinterface zur Bedienung
-* Keine Extrasoftware notwendig (Web-Browser ausreichend)
-* Firmwareupdate via Internet möglich
-* Datenübertragung zu AvNav, OpenCPN, SignalK, OpenPlotter und Navionics möglich 
+* Passwortgeschützte Konfiguration
+* Keine Extrasoftware notwendig (Web-Browser ist ausreichend)
+* Firmware-Update via Internet möglich
+* Datenübertragung zu AvNav, OpenCPN, SignalK, OpenPlotter und Navionics möglich
+* Windsensor kann auch stationär als Wetterstation benutzt werden
+* Anzeige der Winddatebn am NASA Wind Tochterdisplay
 
 
 Aufbau
@@ -41,43 +46,31 @@ Spezifikation
 -------------
 
 +----------------------+-----------------------------+
-| Versorgungsspannung  | 10...28 V                   |
+| Versorgungsspannung  | 7...25 V                    |
 +----------------------+-----------------------------+
-| Stromverbrauch       | 0.5...3.5 W, typisch 1 W    |
+| Stromverbrauch       | 0.36 W                      |
 +----------------------+-----------------------------+
-| Prozessor            | ESP32-S3, Dual Core         |
+| Prozessor            | ESP8266, Single Core        |
 +----------------------+-----------------------------+
-| Clock Speed          | 80, 160, 240 MHz            |
+| Clock Speed          | 80, 160 MHz                 |
 +----------------------+-----------------------------+
-| RAM                  | 512 kB                      |
+| RAM                  | 160 kB                      |
 +----------------------+-----------------------------+
-| Flash                | 16 MB                       |
+| Flash                | 4 MB                        |
 +----------------------+-----------------------------+
-| PSRAM                | 8 MB                        |
+| Datenrate            | 1 Hz                        |
 +----------------------+-----------------------------+
-| Displaygröße         | 400 x 300 pix, 120 dpi      |
+| NMEA0183             | WiFi, max. 50 m             |
 +----------------------+-----------------------------+
-| Refreshrate          | 1 Hz                        |
-+----------------------+-----------------------------+
-| Sensortasten         | kapazitiv                   |
-+----------------------+-----------------------------+
-| NMEA0183-Bus         | RS485, max. 115.2 kBd, 30 m |
-+----------------------+-----------------------------+
-| NMEA2000-Bus         | CAN, 250 kBit/s, 30 m       |
-+----------------------+-----------------------------+
-| I2C-Bus              | 5V, 100 kBit/s, 10 m        |
-+----------------------+-----------------------------+
-| 1Wire-Bus            | 3.3V, 10 m                  |
-+----------------------+-----------------------------+
-| 5V-Ausgang           | 200 mA, isoliert            |
+| RS232-Ausgang        | 3.3 V, TTL, max. 15 m       |
 +----------------------+-----------------------------+
 | ESD-Schutz           | 8 kV                        |
 +----------------------+-----------------------------+
-| Schutzgrad           | IP68, frontseitig           |
+| Schutzgrad           | IP68, allseitig             |
 +----------------------+-----------------------------+
-| Abmessungen          | 110 x 115 x 30 mm           |
+| Abmessungen          | 150 x 150 x 300 mm          |
 +----------------------+-----------------------------+
-| Gewicht              | 280 g                       |
+| Gewicht              | 250 g                       |
 +----------------------+-----------------------------+
 
 Anschlussbelegung
@@ -100,32 +93,20 @@ Maßbilder
 * `Maßbild [PDF] <../_static/files/Drawing_OBP60_V2.pdf>`_
 
    
-Nutzbare und konvertierbare Telegramme
---------------------------------------
+Nutzbare Telegramme
+-------------------
 
 **NMEA0183**
-    * AIVDM, AIVDO, DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDG, HDM, HDT, MTW, MWD, MWV, RMB, RMC, ROT, RSA, VHW, VTG, VWR, XDR, XTE, ZDA
+    * MWV, VWR, VPW
     
-**NMEA2000**
-    * 126992, 127245, 127250, 127251, 127257, 127258, 127488, 127489, 127505, 127508, 128259, 128267, 128275, 129025, 129026, 129029, 129033, 129038, 129039, 129283, 129284, 129539, 129540, 129794, 129809, 129810, 130306, 130310, 130311, 130312, 130313, 130314, 130316
+**NMEA0183 Custom**
+    * INF, WST, WSE
 	
 Nutzbare I2C-Sensorik
 ---------------------
 
-**Umgebungssensoren**
-	* BMP085, BMP180, BMP280, BME280, SHT20, HTU21
-	
-**Spannungs- und Stromsensoren**
-	* INA226, INA219 (in Vorbereitung)
-	
 **Winkelsensoren**
-	* AS5600, MT6701 (in Vorbereitung)
-	
-**Port-Erweiterungen**
-	* PCF8574 (in Vorbereitung)
-	
-**Echtzeit-Uhren**
-	* DS1388
+	* AS5600, MT6701
 	
 Nutzbare 1Wire-Sensorik
 -----------------------
