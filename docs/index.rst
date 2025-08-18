@@ -20,7 +20,7 @@ Der Windsensor Yachta dient zur Messung der Windgeschwindigkeit und der Windrich
 .. _OpenCPN: https://opencpn.org/
 .. _Navionics: https://play.google.com/store/apps/details?id=it.navionics.singleAppMarineLakesHD&hl=de
 .. _OBP60: https://obp60-v2-docu.readthedocs.io/de/latest/
-.. _OBP-Plotte: https://obp-plotter-v4-info.readthedocs.io/de/latest/
+.. _OBP-Plotter: https://obp-plotter-v4-info.readthedocs.io/de/latest/
 
 
 Der Windsensopr Yachta ist so konzipiert, dass er als DIY-Projekt nachgebaut werden kann. Alle technischen Unterlagen stehen als Open Hardware, Open Source und Open Data zur Verfügung und sind bei `GitHub`_ veröffentlicht. Für den einfachen Nachbau kann über Open Boat Projects eine bestückte, programmierte und getestete Platine erworben werden. Der Nachbau beschränkt sich dann größtenteils auf die Beschaffung von mechanischen Komponenten, die Erstellung von 3D-Teilen und den machanischen Zusammenbau. Der Windsensor Yachta wurde schon über 200 Mal erfolgreich nachgebaut und hat eine große weltweite Fangemeinde. Der Service und Support erfolgt über das `Segeln-Forum`_ in deutscher oder englischer Sprache. Dort helfen kompetente Forenmitglieder, die selber einen Windsensor Yachta zusammengebaut haben. Das Core-Entwicklerteam ist dort auch anzutreffen.
