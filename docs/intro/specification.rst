@@ -39,7 +39,7 @@ Aufbau
 ------
 
 .. image:: ../pics/Yachta_Section_View.png
-   :scale: 45%
+   :scale: 35%
 
 
 Spezifikation
