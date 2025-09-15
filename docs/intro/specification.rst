@@ -7,23 +7,23 @@ Technische Daten
 Funktionen
 ----------
 
-* Windspeed 0…75 kn
-* Windrichtung 0…360°
-* Winkelauflösung 0,1°
-* Integrierter Temperatursensor -25...100 °C
+* Windspeed: 0…75 kn
+* Windrichtung: 0…360°
+* Winkelauflösung: 0,1°
+* Integrierter Temperatursensor: -25...100 °C
 * Mechanisches Funktionsprinzip
-* Verschleißfreie magnetische Sensorik
+* Verschleißfreien berührungslose magnetische Sensorik
 * Robuste Mechanik (3 Kugellager)
-* Gewicht ca. 210g
+* Gewicht: ca. 210g
 * Versorgungsspannung 7...25V / 0,36 W
 * 12V Versorgung über Toplicht möglich
 * Wetterfest und UV-stabil
 * Keine Spezialteile aus Metall erforderlich
 * Keine Kabel für Sensorsignale notwendig
 * Signalübertragung per WiFi über NMEA0183
-* TCP-Server Port 6666
+* TCP-Server Port: 6666
 * JSON Datenausgabe
-* Aktualisierungsrate 1 Messwert pro Sekunde
+* Aktualisierungsrate: 1 Messwert pro Sekunde
 * Kein Einbauinstrument notwendig
 * Visualisierung auf einem  Laptop, Handy oder Tablett
 * Webinterface zur Bedienung
@@ -38,7 +38,7 @@ Funktionen
 Aufbau
 ------
 
-.. image:: ../pics/OBP60_Explode_View.png
+.. image:: ../pics/Yachta_Section_View.png
    :scale: 45%
 
 
@@ -52,7 +52,7 @@ Spezifikation
 +----------------------+-----------------------------+
 | Prozessor            | ESP8266, Single Core        |
 +----------------------+-----------------------------+
-| Clock Speed          | 80, 160 MHz                 |
+| Clock Speed          | 160 MHz                     |
 +----------------------+-----------------------------+
 | RAM                  | 160 kB                      |
 +----------------------+-----------------------------+
@@ -68,29 +68,28 @@ Spezifikation
 +----------------------+-----------------------------+
 | Schutzgrad           | IP68, allseitig             |
 +----------------------+-----------------------------+
-| Abmessungen          | 150 x 150 x 300 mm          |
+| Schutzgrad           | IP68, allseitig             |
++----------------------+-----------------------------+
+| Temperaturbereich    | -10...70°C (ABS)            |
 +----------------------+-----------------------------+
 | Gewicht              | 250 g                       |
 +----------------------+-----------------------------+
 
 Anschlussbelegung
 -----------------
-.. image:: ../pics/Bus_Systems.png
+.. image:: ../pics/PCB_Yachta_V2.1_Bot.png
    :scale: 50%
-   
-.. image:: ../pics/Logo_ESP32-S3_t.png
-   :scale: 60%
    
 Schaltplan
 ----------
 
-* `Schaltplan V2.1 [PDF] <../_static/files/Schematic_OBP60_V2.1.pdf>`_
+* `Schaltplan V2.1 [PDF] <../_static/files/Schematic_Windsensor-Yachta-Final-2.1_2025-07-21.pdf>`_
 
 
 Maßbilder
 ---------
 
-* `Maßbild [PDF] <../_static/files/Drawing_OBP60_V2.pdf>`_
+* `Maßbild [PDF] <../_static/files/Yachta_Drawing_V2.1-1.pdf>`_
 
    
 Nutzbare Telegramme
