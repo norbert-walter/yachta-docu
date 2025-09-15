@@ -78,7 +78,7 @@ Spezifikation
 Anschlussbelegung
 -----------------
 .. image:: ../pics/PCB_Yachta_V2.1_Bot.png
-   :scale: 50%
+   :scale: 80%
    
 Schaltplan
 ----------
