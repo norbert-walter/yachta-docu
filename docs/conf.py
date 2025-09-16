@@ -32,7 +32,6 @@ extensions = [
     "sphinx.ext.autosummary",
     "sphinx.ext.intersphinx",
     'sphinx.ext.autosectionlabel',
-    'sphinx.ext.todo',
 ]
 
 intersphinx_mapping = {
@@ -43,6 +42,9 @@ intersphinx_mapping = {
 intersphinx_disabled_domains = ["std"]
 
 templates_path = ["_templates"]
+
+# Allow to insert raw HTML content
+raw_enabled
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
