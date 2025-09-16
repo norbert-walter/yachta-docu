@@ -32,7 +32,7 @@ Funktionen
 * Firmware-Update via Internet möglich
 * Datenübertragung zu AvNav, OpenCPN, SignalK, OpenPlotter und Navionics möglich
 * Windsensor kann auch stationär als Wetterstation benutzt werden
-* Anzeige der Winddatebn am NASA Wind Tochterdisplay
+* Anzeige der Winddaten am NASA Wind Tochterdisplay
 
 
 Aufbau
