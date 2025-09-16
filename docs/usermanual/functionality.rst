@@ -8,9 +8,8 @@ Der Windsensor Yachta ist ein Anemometer mit rotierendem Schalenrad. Die Windric
 	<!-- 3D Model-Viewer -->
 	<!-- More infos: https://modelviewer.dev/docs -->
 	<model-viewer
-		src="https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb"
-		ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz" 
-        poster="https://modelviewer.dev/assets/poster-astronaut.png"
+		src=" https://yachta-docu.readthedocs.io/de/latest/_static/files/Yachta.glb"
+		poster="https://yachta-docu.readthedocs.io/de/latest/_images/Wind_Sensor_Yachta_tr.png"
 		alt="Mein 3D-Modell"
 		shadow-intensity="1"
 		ar
