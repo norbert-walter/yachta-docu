@@ -6,6 +6,8 @@ Der Windsensor Yachta ist ein Anemometer mit rotierendem Schalenrad. Die Windric
 .. image:: ../pics/NMEA_Bus.png
              :scale: 35%
 
-.. raw::html
-	<h1>Das ist mein eingebetteter HTML-Titel</h1>
-    <p>Hier ist ein Absatz mit benutzerdefiniertem HTML.</p>
+.. raw:: html
+
+   <div style="border:1px solid red; padding:5px;">
+       <strong>Hallo Welt!</strong>
+   </div>
