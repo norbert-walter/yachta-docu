@@ -72,7 +72,7 @@ Der Windsensopr Yachta ist so konzipiert, dass er als DIY-Projekt nachgebaut wer
    
 .. toctree::
    :maxdepth: 3
-   :caption: Hilfe
+   :caption: Infos
    :name: sec-help   
 
    Fragen und Antworten <help/faq>
