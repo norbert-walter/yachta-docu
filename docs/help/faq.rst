@@ -1,7 +1,7 @@
 Fragen und Antworten
 ====================
 
-*Welche Bedeutung hat der Blink-Code der blauen LED?**
+**Welche Bedeutung hat der Blink-Code der blauen LED?**
 
 	Die blaue LED zeigt den Status der WiFi-Verbindung an.
 	
@@ -47,7 +47,7 @@ Fragen und Antworten
 	Das Problem wird häufig durch falsche Ausrichtung der Magnete im Magnetkranz verursacht. Die Magnete müssen eine abwechselnde Polarität haben. Sind alle Magnete gleich ausgerichtet, so werden 4 Impulse anstatt 2 Impulse erkannt. Die Geschwindigkeit ist damit um den Faktor 2 zu hoch. Am einfachsten ist es, wenn man die Magnete vor dem Einbau alle zusammen aneinander haftet und einzeln abnimmt und eine der anhaftenden Seiten markiert, z.B. immer die linke Seite. So kann man beim Einbau die Ausrichtung des Magnetfeldes sehr einfach kontrollieren. Mit einem Handkompass wäre das durchaus auch möglich, wenn auch etwas schwieriger.
 	
 	.. image:: ../pics/Magnets.png
-             :scale: 50%
+             :scale: 20%
 
 **Die Android App lässt sich nicht unter Android 11 installieren**
 
@@ -79,8 +79,6 @@ Fragen und Antworten
 	Falls Sie noch einen Fehler entdeckt haben, so können Sie uns gerne über das Kontaktformular der Webseite informieren. Beschreiben Sie den Fehler möglichst so, dass er nachvollzogen werden kann. Wir leiten den Fehlerbericht an den jeweiligen Projekteigentümer weiter und bitten ihn um Korrektur. Sie können aber auch selber einen Fehlerbericht als `Issue`_ bei GitLab auf der Projektseite einreichen. GitLab informiert dann den Projekteigentümer automatisch.
 
 .. _Issue: https://github.com/norbert-walter/Windsensor_Yachta/issues
-	
-	https://github.com/norbert-walter/Windsensor_Yachta/issues
 	
 **Ich habe hier keine Lösung für mein Problem gefunden**
 
