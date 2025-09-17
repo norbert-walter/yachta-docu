@@ -6,7 +6,7 @@ Beim Nachbau des Windsensors sind Urheberrechte und Lizenzen zu beachten. Der Na
 Einführung
 ----------
 
-Das **Yachta Wind Sensor -Projekt** ist Teil von **Open Boat Projects** und bietet eine offene Hardware- und Softwarelösung zur Windmessung. Ziel des Projekts ist es, die Vervielfältigung, Weiterentwicklung und Nutzung durch die Community zu fördern. Um sicherzustellen, dass alle Mitwirkenden und Nutzer ihre Rechte und Pflichten verstehen, gelten die folgenden Lizenzregeln. 
+Das **Yachta Windsensor-Projekt** ist Teil von **Open Boat Projects** und bietet eine offene Hardware- und Softwarelösung zur Windmessung. Ziel des Projekts ist es, die Vervielfältigung, Weiterentwicklung und Nutzung durch die Community zu fördern. Um sicherzustellen, dass alle Mitwirkenden und Nutzer ihre Rechte und Pflichten verstehen, gelten die folgenden Lizenzregeln. 
 
 Lizenzübersicht
 ---------------
