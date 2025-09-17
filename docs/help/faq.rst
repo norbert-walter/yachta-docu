@@ -47,7 +47,8 @@ Fragen und Antworten
 	Das Problem wird häufig durch falsche Ausrichtung der Magnete im Magnetkranz verursacht. Die Magnete müssen eine abwechselnde Polarität haben. Sind alle Magnete gleich ausgerichtet, so werden 4 Impulse anstatt 2 Impulse erkannt. Die Geschwindigkeit ist damit um den Faktor 2 zu hoch. Am einfachsten ist es, wenn man die Magnete vor dem Einbau alle zusammen aneinander haftet und einzeln abnimmt und eine der anhaftenden Seiten markiert, z.B. immer die linke Seite. So kann man beim Einbau die Ausrichtung des Magnetfeldes sehr einfach kontrollieren. Mit einem Handkompass wäre das durchaus auch möglich, wenn auch etwas schwieriger.
 	
 	.. image:: ../pics/Magnets.png
-             :scale: 20%
+             :scale: 25%
+	Abb.: Magnethalter mit Polarität der Magnete
 
 **Die Android App lässt sich nicht unter Android 11 installieren**
 
