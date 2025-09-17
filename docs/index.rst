@@ -35,32 +35,31 @@ Der Windsensopr Yachta ist so konzipiert, dass er als DIY-Projekt nachgebaut wer
 
    Historie <intro/historie>
    Technische Daten <intro/specification>
-   
-.. toctree::
-   :maxdepth: 3
-   :caption: Bedienung
-   :name: sec-usermanual
-
-   Funktionsweise <usermanual/functionality>
-   Bedienelemente <usermanual/elements>
-   Inbetriebnahme <usermanual/start>
-   Konfiguration <usermanual/configuration>
-   Bussysteme <usermanual/bussystems>
-   Datenaustausch <usermanual/dataexchange>
-   Erweiterte Sensorik <usermanual/sensors>
-   Beispielkonfiguration <usermanual/samples>
-   Sicherheitshinweise <usermanual/safety>
-
+  
 .. toctree::
    :maxdepth: 3
    :caption: Zusammenbau
    :name: sec-assembling
    
+   Funktionsweise <assembling/functionality>
    Geräteaufbau <assembling/device>
    Vorbereitung <assembling/preparation>
    Bauteilliste <assembling/partlist>
    Durchführung <assembling/actionsteps>
    Funktionstest <assembling/tests>
+  
+.. toctree::
+   :maxdepth: 3
+   :caption: Bedienung
+   :name: sec-usermanual
+
+   Inbetriebnahme <usermanual/start>
+   Konfiguration <usermanual/configuration>
+   Bussysteme <usermanual/bussystems>
+   Datenaustausch <usermanual/dataexchange>
+   Erweiterungen <usermanual/extensionss>
+   Beispielkonfiguration <usermanual/samples>
+   Sicherheitshinweise <usermanual/safety>
    
 .. toctree::
    :maxdepth: 3
@@ -68,7 +67,6 @@ Der Windsensopr Yachta ist so konzipiert, dass er als DIY-Projekt nachgebaut wer
    :name: sec-programming   
 
    Programmierumgebung <programming/environment>
-   Seitenerstellung <programming/pages>
    Kompilieren und Download <programming/activating>
    Web-Flashtool <programming/webflashtool>
    
@@ -84,4 +82,5 @@ Der Windsensopr Yachta ist so konzipiert, dass er als DIY-Projekt nachgebaut wer
    Service <help/service>
    Mitarbeit <help/cooperation>
    Spenden <help/donation>
+   Copyright <help/copyright>
    Glossar <help/glossar>
