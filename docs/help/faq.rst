@@ -1,38 +1,89 @@
 Fragen und Antworten
 ====================
 
-**Warum flackert der Bildschirm in regelmäßigen Abständen?**
+*Welche Bedeutung hat der Blink-Code der blauen LED?**
 
-	Das Flackern des Bildschirmes dienst zum Auffrischen des Bildschirminhaltes. In regelmäßigen Abständen muss das Display den Bildschirminhalt durch einen Voll-Refresh komplett erneuern, um Geisterbilder zu entfernen und den Kontrast aufzufrischen. Dazu wird der Bildinhalt invertiert, mehrmals gelöscht und wieder vollständig aufgebaut.
+	Die blaue LED zeigt den Status der WiFi-Verbindung an.
+	
+	+--------------------------------------+-----------------------------------------------------+
+	|LED Status                            | Bedeutung                                           |
+	+======================================+=====================================================+
+	|dauerhaft aus                         | Zu externen WiFi verbunden                          |
+	+--------------------------------------+-----------------------------------------------------+
+	|dauerhaft an                          | Kein externes WiFi verbunden                        |
+	+--------------------------------------+-----------------------------------------------------+
+	|blinkt kurzzeitig                     | Daten werden über externes WiFi übertragen          |
+	+--------------------------------------+-----------------------------------------------------+
+	|dauerhaft an, kurzzeitig unterbrochen | Daten werden über internes WiFi übertragen (Yachta) |
+	+--------------------------------------+-----------------------------------------------------+
 
-**Wie kann ich das flackern des Bildschirms reduzieren?**
+	Grundsätzlich wird unterschieden, ob über ein externes WiFi oder über das interne WiFi (NoWa) Daten übertragen werden. Internes WiFi bedeutet, dass man sich mit dem WiFi, das der Windsensor selber zur Verfügung stellt, verbunden hat. Beim einem externen WiFi verbindet sich der Windsensor als Client an ein anderes WiFi-Netzwerk.
 
-	Die Zeitpunkt eines Voll-Refreshes hängt von einigen Faktoren ab. In den ersten 5 Minuten nach einem Neustart des Gerätes erfolgt jede Minute ein Voll-Refresh, um eine Temperaturanpassung des Displays aus einem kalten Zustand heraus zu ermöglichen. Nach jedem Seitenwechsel wird ebenfalls ein Voll-Refresh ausgeführt. Das gilt für die Seite die zu letzt aufgerufen wurde und die mindestens 4s lang angezeigt wird. Dieses Verhalten bei Seitenwechsel lässt sich über den Parameter **Refresh** abstellen. Das ist aber mit dem Nachteil verbunden, dass sich Geisterbilder alter Seiten nicht vollständig entfernen lassen. Zusätzlich lässt sich festlegen in welchen Intervallen ein Voll-Refresh generell ausgeführt wird. Die Zykluszeit kann im Bereich von 1...10 min über den Parameter **Full Refresh Time** eingestellt werden. Der Voll-Refresh lässt sich zusätzlich über den Parameter **Fast Refresh** beschleunigen. Dann laufen die Voll-Refreshes schneller ab. Die Beschreibungen zu den Refresh-Einstellungen finden Sie im Kapitel :ref:`Config - OBP Display`. Die Einstellungen zum Bildschirm-Refresh haben auch Auswirkungen auf den Bildschirmkontrast unter Sonneneinwirkung.
+	Sofern sich das Schalenrad dreht, werden Winddaten ein mal pro Sekunde übertragen. Dreht sich das Schahlenrad nicht, so wird die Datenrate reduziert. Dann wird nur alle 3 Sekunden ein Telegramm ausgesendet.
 
-**Warum verblasst das Display unter Sonneneinwirkung?**
+**Die Windrichtungsanzeige ist nicht korrekt**
 
-	Bei extremer Sonneneinwirkung erhitzt sich das e-Paper-Display auf und verursacht einen Kontrastverlust bei der partiellen Bildschirmaktualisierung. Das Bild wird zunehmend grau und es entstehen einige Streifen im Display. Das Display ist nicht defekt. Der Zustand lässt sich durch einen Voll-Refresh beseitigen.
+	Je nachdem wie der 5x5x5 mm Magnet zur Windrichtungsanzeige eingeklebt ist, kann eine Abweichung im Anzeigeinstrument auftreten. Das ist nicht weiter schlimm, denn über einen **Offset** unter **Device Settings** kann der Fehler korrigiert werden.
 
-**Was kann man dagegen tun?**
+**Die Messwerte für den wahren Wind stimmen nicht**
 
-	Der Effekt kann reduziert werden, indem direkte Sonnenstrahlung auf das Display vermieden wird. Eine andere Möglichkeit zur Verbesserung besteht darin, die Voll-Refreshes in kürzeren Zyklen ausführen zu lassen. Im Kapitel :ref:`Config - OBP Display` finden Sie eine Tabelle zu sinnvollen Einstellungen unter verschiedenen Bedingungen. Auch der Stromverbrauch des Gerätes hat einen Einfluss auf den Kontrastverlust, da die Verlustwärme im Gerät ebenfalls zur Temperaturerhöhung beiträgt.
+	Der Windsensor Yachta kann nur den relativen Wind anzeigen, da Referenzwerte der Ausrichtung des Bootes im Windsensor nicht vorliegen. Der wahre Wind kann nur korrekt angezeigt werden, wenn der Windsensor als Wetterstation stationär an Land mit korrekter Nord-Ausrichtung installiert ist. Auf einem beweglichen Boot kann nur der relative Wind bzw. scheinbare Wind angezeigt werden.
 
-**Welche Möglichkeiten bestehen den Stromverbrauch zu reduzieren?**
+**Die Windrichtungsanzeige reagiert nicht**
 
-	Der Stromverbrauch lässt sich reduzieren, indem der Access Point standardmäßig nach einer vorgegebenen Zeit abgeschaltet wird. Zusätzlich kann der Prozessortakt reduziert werden. Einige Geräte wie das OBP60 verfügen über spezielle Stromsparfunktionen über den Parameter **Power Mode**. Details zu Stromsparfunktionen finden Sie im Kapitel :ref:`Config - OBP Hardware`.
+    * Ist der Magnet richtig herum eingebaut?  (korrekte Nord-Süd-Ausrichtung)
+    * Ist die Feldstärke des Magneten ausreichend stark? (Magn. Flux Density muss größer 1000 mT sein)
+    * Ist der Abstand des Magneten zum Chip hinreichend klein? (ca. 1 mm Abstand)
+    * Ist der richtige Wind Sensor Type unter Device Settings ausgewählt? (Yachta)
+
+**Die Windspeedanzeige funktioniert nicht richtig**
+
+    * Ist der Hallsensor nah genug am Magnetkranz? (ca. 1 mm Abstand bei Hallsensor mit langen Drähten)
+    * Sind die Magnete richtig herum eingebaut? (korrekte Nord-Süd-Ausrichtung)
+    * Hat die Achse zu großes Spiel? (Der Magnetkranz darf nicht hin und her pendeln und den Abstand zum Hallsensor verändern)
+
+**Die Windspeedanzeige zeigt den doppelten Speed an**
+
+	Das Problem wird häufig durch falsche Ausrichtung der Magnete im Magnetkranz verursacht. Die Magnete müssen eine abwechselnde Polarität haben. Sind alle Magnete gleich ausgerichtet, so werden 4 Impulse anstatt 2 Impulse erkannt. Die Geschwindigkeit ist damit um den Faktor 2 zu hoch. Am einfachsten ist es, wenn man die Magnete vor dem Einbau alle zusammen aneinander haftet und einzeln abnimmt und eine der anhaftenden Seiten markiert, z.B. immer die linke Seite. So kann man beim Einbau die Ausrichtung des Magnetfeldes sehr einfach kontrollieren. Mit einem Handkompass wäre das durchaus auch möglich, wenn auch etwas schwieriger.
+	
+	.. image:: ../pics/Magnets.png
+             :scale: 50%
+
+**Die Android App lässt sich nicht unter Android 11 installieren**
+
+	Ab Android 11 wurden die Sicherheitseinstellungen verschäft und es lassen sich keine Apps (apk-Dateien) mehr von externen Quellen installieren. Das soll verhindern, dass ungewollt Programme über Internetseiten installiert werden. Jedes Mal wenn eine apk-Datei herunter geladen wird, wird deren Dateiendung automatisch umbenannt und die Datei kann nicht mehr zur Installation gestartet werden. Ein nachträgliches umbenenen der Datei in apk unter Android ist nicht möglich. Um die App trotzdem unter Android 11 installieren zu können, muss ein kleiner Umweg über die Dateitransfer-Funktion vorgenommen werden. Dazu wird die apk-Datei auf einem PC herunter geladen und über ein USB-Kabel in den Download-Ordner des Handys übertragen. Mit dem internen Datai-Manager von Android 11 kann dann die apk-Datei installiert werden.
 	
 
-**Warum startet mein OBP60 nicht, wenn ich die Spannung zuschalte?**
+**Es ist keine Verbindung mit dem Windsensor über WiFi möglich**
 
-	Das Problem liegt am Softstart-Verhalten des StepDown- Wandler, der die 12V Versorgungsspannung in eine 5V-Gerätespannung umwandelt. Die Zeitdauer des Softstarts ist auf 5 ms begrenzt. Beim Start wird kurzzeitig recht viel Strom gezogen, weil die internen Kondensatoren geladen werden. Ist der Leitungswiderstand zu groß, läuft der Startprozess nicht schnell genug ab und der StepDown-Wandler startet nicht. Er hängt dann in einem undefinierten Zustand und kommt aus diesem Zustand nicht mehr heraus. Empfehlenswert sind für Stromversorgungskabel Leiterquerschnitte von 0,5...0,75 mm2. Das Kabel sollte direkt an der Schalttafel angeschlossen sein und so kurz wie möglich sein und keine weiteren Abgänge haben. Überlängen des Kabels hinter der Verkleidung sollten vermieden werden. Ebenso das abgreifen von Strom an anderen Geräten. Hilfsweise kann man hinten am 12V-Eingang einen Elektrolytkondensator von ca. 470...1000 uF parallel anschließen. Damit sollte sich das Problem reduzieren lassen.
-
-**Warum funktionieren WiFi-Verbindungen nicht richtig?**
-
-	WiFi-Verbindungen sind auf das 2,4 GHz Frequenzband begrenzt. Andere Teilnehmer außerhalb des eigenen Access Point nutzen das selbe Frequenzband und müssen sich die Bandbreite mit anderen Teilnehmern teilen. In größeren Häfen kann es dazu kommen, dass die Bandbreite aller Kanäle durch zu viele Teilnehmer ausgelastet ist. In diesem Fall kommt es zu Verzögerungen bei der Datenübertragung. Sie müssen dann mit einem trägen Ansprechverhalten der Messdaten im Display rechnen, wenn die Daten über WiFi-Verbindungen übertragen werden. Leitungsgebundene Datenübertragungen aus Bussystemen wie NMEA2000 oder NMEA0183 sind davon nicht betroffen. Etwas Abhilfe kann die Auswahl der Übertagungskanäle Kanäle 1 und 13 bewirken, da sie sich an den Rändern des 2,4 GHz Frequenzbereiches befinden und nur einen Nachbarkanal haben.
+	Nachdem der Windsensor mit 12V versorgt wird, öffnet sich nach 30s das WiFi-Netzwerk des Windsnesors mit dem Namen Yachta. Das Passwort lautet 12345678. Einige Handy und Tabletts können nicht korekt damit umgehen, dass der AsseccPoint des Windsensors keine Internetverbindung hat. Immer wenn man die Webseite http://192.168.5.1 aufrufen möchte wird die Anfrage in das Internet geleitet anstatt zum Windsensor. Das Routing im Handy bzw. Tablett ist nicht korrekt. Das selbe Problem tritt auch bei der Android-App auf. Um den Fehler zu beheben kann man die Mobilfunk-Verbindung des Handys zum Internet trennen. Danach wird der Windsensor Yachta wieder gefunden.
 	
-	.. image:: ../pics/WiFi_Channels.png
-             :scale: 35%
+**Wenn ich die Spannung zuschalte, dann wird in AVnav oder OpenPlotter der Windsensor nicht automatisch angebunden**
 
-**Das GPS bekommt beim OBP60 keinen Fix. Was kann ich tun?**
+	Wird AVnav oder OpenPlotter auf einem Raspi verwendet und stellt der Raspi gleichzeitig den AccessPoint bereit mit dem sich der Windsensor verbinden soll, so dauert es eine gewisse Zeit nach dem Zusschalten der Versorgungsspannung bis das Linux-Betriebssystem hochgefahren ist und der Access Point bereit ist. Die Boot-Phase kann 2…3 min dauern. Wenn zeitgleich die Versorgungsspannung des Windsensors zugeschaltet wird, so versucht der Windsensor 30s lang sich in das externes WiFi-Netzwerk des Raspi einzubuchen. Da der Raspi aber wesentlich mehr Zeit zum Booten benötigt als der Windsensor, scheitert die Herstellung der WiFi-Verbiundung. Unter Device Settings kann das Connection Timeout von 30s auf 2 min oder mehr eingestellt werden. Dann wartet der Windsensor entsprechend länger bis das Connection-Timeout kommt. Mit der blauen LED auf der Platine kann die WiFi-Verbindung überprüft werden. Ist die LED aus, so hat sich der Windsensor in ein externes WiFi-Netzwerk als Client eingebucht. Wenn Daten übertragen werden, bitzt die blaue LED kurz auf.
+	
+**Die Anzeige der Daten vom Windsensor ist sehr träge**
 
-	Beim OBP60 befindet sich die GPS-Antenne auf der Rückseite des Displays. Sind direkt hinter dem Display Metallteile oder Metallflächen, so kann der GPS-Empfang behindert oder unmöglich sein. Sorgen Sie dafür, dass sich keine größeren Metallteile oder Metallflächen hinter dem Display befinden. Kann der Empfang nicht verbessert werden, so besteht die Möglichkeit eine externe GPS-Antenne zu verwenden. Sie sollten die GPS-Antenne möglichst an einer Stelle positionieren, bei der die Antenne freie Sicht zum Himmel hat. Damit erzielen Sie die beste GPS-Empfangsleistung und hohe Positionsgenauigkeiten. In einigen Fällen verursachen Stromversorgungsgeräte mit Schaltreglern wie z.B. bei LED-Beleuchtungen unzulässige Störungen, die sich auf die Empfangsleistung von GPS-Signalen auswirken können. Versuchen Sie in solchen Fällen systematisch die Störquelle zu ermitteln, indem sie Geräte zu- und abschalten und die Auswirkungen auf die GPS-Empfangsqualität beobachten. 
+	Wenn sich das Schalenrad nicht deht, wird das Sende-Intervall der Datentelegramme von 1s auf 3s erhöht, um  nicht unnötig viele Daten zu senden, denn bei Windstille macht es nicht viel Sinn dauerhaft die selben Daten zu senden. Wenn der Windsensor zu Hause ohne Wind getestet wird, dann kann es bis zu 3s dauern, bis Windspeed-Daten kommen, wenn man das Schalenrad dreht. Für Tests zu Hause eignet sich der Demo Mode ganz gut, bei dem permanent simulierte Daten für Windrichtung und Windspeed erzeugt werden. Die Einstellungen könne unter **Device Settings** über den **Server Mode** vorgenommen werden.
+	
+**Ich sehe keine Temperaturwerte**
+
+	Wenn unter **Wind Values** kein Temperaturwert angezeigt wird, dann ist vermutlich der **Temp Sensor Type** unter **Device Settings** nicht richtig ausgewählt. Der Wert muss auf **DS18B20** stehen. Andere Temperatursensoren als der DS18B20 werden beim Windsensor Yachta nicht unterstützt.
+	
+**Ich sehe keine Messwerte für Luftfeuchtigkeit und Luftdruck**
+
+	Der Temp Sensor Type BME280 kann beim Windsensor Yachta nicht verwendet werden, da er nicht auf der Platine verbaut ist. Eine Anzeige der Luftfeuchtigkeit und des Luftdrucks sind nicht möglich.
+	
+**Ich habe noch einen Fehler entdeckt, was kann ich tun?**
+
+	Falls Sie noch einen Fehler entdeckt haben, so können Sie uns gerne über das Kontaktformular der Webseite informieren. Beschreiben Sie den Fehler möglichst so, dass er nachvollzogen werden kann. Wir leiten den Fehlerbericht an den jeweiligen Projekteigentümer weiter und bitten ihn um Korrektur. Sie können aber auch selber einen Fehlerbericht als `Issue`_ bei GitLab auf der Projektseite einreichen. GitLab informiert dann den Projekteigentümer automatisch.
+
+.. _Issue: https://github.com/norbert-walter/Windsensor_Yachta/issues
+	
+	https://github.com/norbert-walter/Windsensor_Yachta/issues
+	
+**Ich habe hier keine Lösung für mein Problem gefunden**
+
+	Falls Sie hier keine Lösung für Ihr Problem gefunden haben, können Sie bei GitLab unter Issues nach bekannten nicht gelösten Problemen nachsehen. Schauen Sie auch unter Closed Issues nach. Dort sind auch einige Lösungen zu aufgetretenen Fehlern beschrieben. Wenn Sie möchten, können Sie sich auch Hilfe bei anderen Seglern im Deutschen `Segeln-Forum`_ holen. Dort gibt es viele Interessierte, die bereits erfolgreich einen Windsensor Yachta zusammen gebaut haben und Ihnen helfen können. Sie können dort in Deutsch oder Englisch kommunizieren.
+
+.. _Segeln-Forum: https://www.segeln-forum.de/board/195-open-boat-projects-org/
