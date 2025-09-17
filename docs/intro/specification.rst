@@ -14,7 +14,6 @@ Funktionen
 * Mechanisches Funktionsprinzip
 * Verschleißfreien berührungslose magnetische Sensorik
 * Robuste Mechanik (3 Kugellager)
-* Gewicht: ca. 210g
 * Versorgungsspannung 7...25V / 0,36 W
 * 12V Versorgung über Toplicht möglich
 * Wetterfest und UV-stabil
@@ -32,7 +31,7 @@ Funktionen
 * Firmware-Update via Internet möglich
 * Datenübertragung zu AvNav, OpenCPN, SignalK, OpenPlotter und Navionics möglich
 * Windsensor kann auch stationär als Wetterstation benutzt werden
-* Anzeige der Winddaten am NASA Wind Tochterdisplay
+* Anzeige der Winddaten über NASA Wind Tochterdisplay
 
 
 Aufbau
