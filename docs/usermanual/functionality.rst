@@ -13,7 +13,7 @@ Der Windsensor Yachta ist ein Anemometer mit rotierendem Schalenrad. Die Windric
 		alt="Mein 3D-Modell"
 		shadow-intensity="1"
 		tone-mapping="cineon"
-		camera-orbit="45deg 60deg 100%"
+		camera-orbit="45deg 60deg 80%"
 		interaction-prompt="none"
 		ar
 		camera-controls
@@ -28,7 +28,7 @@ Der Windsensor Yachta ist ein Anemometer mit rotierendem Schalenrad. Die Windric
 	  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
 	</script>
 
-Abb.: 3D-Modell Windsensor Yachta (klick und bewege)
+Abb.: 3D-Modell Windsensor Yachta (klicken und bewegen)
 
 .. raw:: html
 
@@ -40,7 +40,7 @@ Abb.: 3D-Modell Windsensor Yachta (klick und bewege)
 		alt="Mein 3D-Modell"
 		shadow-intensity="1"
 		tone-mapping="cineon"
-		camera-orbit="45deg 60deg 100%"
+		camera-orbit="45deg 60deg 80%"
 		interaction-prompt="none"
 		ar
 		camera-controls
@@ -55,4 +55,31 @@ Abb.: 3D-Modell Windsensor Yachta (klick und bewege)
 	  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
 	</script>
 
-Abb.: 3D-Modell Yachta-Platine (klick und bewege)
+Abb.: 3D-Modell Yachta-Platine (klicken und bewegen)
+
+.. raw:: html
+
+	<!-- 3D Model-Viewer -->
+	<!-- More infos: https://modelviewer.dev/docs -->
+	<model-viewer
+		src=" https://yachta-docu.readthedocs.io/de/latest/_static/files/Yachta_Details.glb"
+		poster="https://yachta-docu.readthedocs.io/de/latest/_images/Wind_Sensor_Yachta_Details.png"
+		alt="Mein 3D-Modell"
+		shadow-intensity="1"
+		tone-mapping="cineon"
+		camera-orbit="45deg 60deg 80%"
+		interaction-prompt="none"
+		ar
+		camera-controls
+		style="width: 400px; height: 400px; border: 0px solid #ccc; border-radius: 0px;">
+	</model-viewer>
+
+	<!-- Model-Viewer Skripte -->
+	<script type="module"
+	  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+	</script>
+	<script nomodule
+	  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+	</script>
+
+Abb.: 3D-Modell Windsensor Yachta Details (klicken und bewegen)
