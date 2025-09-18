@@ -41,6 +41,7 @@ Der Windsensopr Yachta ist so konzipiert, dass er als DIY-Projekt nachgebaut wer
    :caption: Zusammenbau
    :name: sec-assembling
    
+   Wichtge Hinweise <assembling/important>
    Funktionsweise <assembling/functionality>
    Geräteaufbau <assembling/device>
    Vorbereitung <assembling/preparation>
