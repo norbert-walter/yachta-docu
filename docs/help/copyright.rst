@@ -23,7 +23,7 @@ Lizenzübersicht
 |              |                |                             |Quellcode und Lizenzhinweise müssen bereitgestellt werden       |
 +--------------+----------------+-----------------------------+----------------------------------------------------------------+
 
-Lizenzerkläeung
+Lizenzerklärung
 ---------------
 
 * CC-BY-NC-SA 4.0: 
