@@ -12,7 +12,7 @@ Bevor Sie mit dem Projekt beginnen, sollten Sie sich Zeit nehmen und diese Hinwe
 .. warning::
 	Beachten Sie, dass der verwendete Kleber eine bestimmte Restelastizität haben muss, um die Ausdehnung oder Schrumpfung unterschiedlicher Bauteile bei Temperaturänderungen ausgleichen zu können. Immerhin können Temperaturänderungen von ca. 100°C (-10 … 90°C) zwischen Sommer und Winter auftreten und dadurch Klebeverbindungen brechen.
 
-.. hint::
+.. tip::
 	Wenn Sie wenig Erfahrung mit SMD-Elektronik haben, kaufen Sie eine bestückte und programmierte Platine. Das erspart Ihnen viel Zeit und Mühe bei der Fehlersuche.
 
 .. danger::

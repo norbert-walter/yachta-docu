@@ -59,10 +59,9 @@ Schaltplan und Fertigungsdaten
 
 Der Schaltplan und die Platine wurden mit dem Online-Entwicklungstool EasyEDA erstellt. Nachfolgend sind die Unterlagen für eine Fertigung aufgeführt.
 
-* `Schaltplan V2.1 [PDF] <../_static/files/Schematic_OBP60_V2.1.pdf>`_
-* `Gerber Daten [ZIP] <../_static/files/Gerber_OBP60_V2.1.zip>`_
-* `Bauteilliste [TXT] <../_static/files/BOM_OBP60_V2.1.txt>`_
-* `Bestückung [HTML] <../_static/files/ibom_multifunktionsdisplay_V2.1.html>`_
+* `Schaltplan V2.1 [PDF] <../_static/files/Schematic_Windsensor-Yachta-Final-2.1_2025-07-21.pdf>`_
+* `Bauteilliste [CSV] <../_static/files/BOM_Windsensor-Yachta-Final-2.1_2025-09-18.csv>`_
+* `Bestückung [HTML] <../_static/files/ibom_yachta_v2.1.html>`_
 * `3D-Daten der Kunststoff-Teile [ZIP] <../_static/files/OBP60_3D_Parts_V2.1.zip>`_
 
 .. image:: ../pics/Lizenz_by-nc-sa_eu.png
