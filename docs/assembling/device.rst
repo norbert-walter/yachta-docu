@@ -76,6 +76,8 @@ Schaltungsbeschreibung
 ----------------------
 
 .. image:: ../pics/Schematic_Yachta_V2.1.png
+	   :scale: 45%
+Abb.: Schaltplan Yachta V2.1
 
 Am Kontaktfeld J1 liegen alle notwendigen Signale zum betrieb des Windsensors an. Das sind die Eingänge für die Versorgungsspannung (+12V, GND) als auch die Anschlüsse für die Programmierung des Mikrocontrollers (PRG) als auch die Signale zur Datenübertragung (RX, TX).
 
