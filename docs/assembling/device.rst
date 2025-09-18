@@ -4,84 +4,54 @@ Geräteaufbau
 Mechanischer Aufbau
 -------------------
 
-.. image:: ../pics/OBP60_Explode_View_Named.png
+.. image:: ../pics/Yachta_Section_View.png
    :scale: 45%
-Abb.: Explosionsansicht
+Abb.: Komponentenansicht
 
-In der oberen Abbildung ist der Aufbau des OBP60 zu sehen. Das Gerät besteht aus einzelnen Komponenten, die im folgenden beschrieben werden.
+In der oberen Abbildung ist der Aufbau des Windsensor Yachta zu sehen. Das Gerät besteht aus einzelnen Komponenten, die im folgenden beschrieben werden.
 
-	* **Touch Pads**
-		Die Tasten bestehen aus schwarz eloxierten Inbus-Senkschrauben aus Edelstahl (V2A). Die Tasten werden mit einem Dichtmittel in die Frontschale des Gehäuses eingeschraubt, um Wasserdichtigkeit zu erreichen.
-	* **Springs**
-		Die Federn hinter den Tasten dienen der elektrischen Kontaktierung der Tasten mit den Sensorflächen auf der Platine.
-	* **Front Case**
-		Die Frontschale des Gehäuses nimmt die Tasten auf und enthält die eingeklebte Frontscheibe. Die Außenflächen der Frontschale bestehen aus 2 mm dickem Kunststoff. An einigen Stellen ist das Gehäuse hohl und enthält an den Stellen eine Stützstruktur mit einem Füllgrad von 30%. Das Gehäuse ist als Kastenkonstruktion ausgeführt und dadurch verwindungssteif.
-	* **Brass Inlets**
-		Die Messing-Gewindeeinsätze dienen zur Verstärkung der Gewinde für die Gehäuseschrauben, da der Kunststoff keine ausreichende Festigkeit aufweist, um den nötigen Druck zum Anpressen der Gehäusedichtung aufzubringen. Die Messing-Gewindeeinsätze werden thermisch in den Kunststoff eingeschmolzen und sind gegen eine ungewollte Verdrehung im Kunststoff gesichert.
-	* **Glue Film**
-		Der Klebefilm wird auf die Frontscheibe aufgetragen und dient zur wasserdichten Befestigung der Frontscheibe an der Innenseite des Gehäuses.
-	* **Front Glass**
-		Die Frontscheibe aus 3 mm dickem Plexiglas schützt das Display vor Umwelteinflüssen und vor mechanischen Beschädigungen durch harte Schläge. Die Frontscheibe dient zusätzlich als UV-Filter mit hoher Filterwirkung. Die Außenseite der Frontscheibe ist entspiegelt und verhindert direkte Reflexionen des Sonnenlichts. Eine Besonderheit der Frontscheibe ist ihre Fähigkeit, das e-Paper-Display bei Nacht zu beleuchten. Dazu koppeln an der oberen Stirnseite der Scheibe 6 RGB-LEDs Licht in die Plexiglasscheibe ein. Das Licht der LEDs wird an Streukörpern innerhalb des Plexiglases auf das e-Paper-Display umgelenkt. Die Ausleuchtung des Displays erfolgt daher gleichmäßig über die gesamte Displayfläche.
-	* **Filter**
-		Eine IR-Filterfolie wird zusätzlich auf der Rückseite der Frontscheibe aufgebracht und soll die Infrarotstrahlung des Sonnenlichtes reduzieren und vom e-Paper-Display fernhalten. Die Infrarotstrahlung wird in der Filterfolie absorbiert und an die Frontscheibe abgegeben, denn bei maximaler Sonenneinstrahlung treffen bis zu 10 W an Wärmestrahlung auf das Display.
-	* **Display Frame**
-		Der Displayrahmen ist eine Art Maske und verdeckt unerwünschte Bereiche des Displays. Zusätzlich ist ein kleiner Steg angebracht, um das Licht der Hintergrundbeleuchtung gegenüber dem Display abzuschirmen, damit kein Fremdlicht in die Glasscheibe des e-Paper-Displays eingekoppelt wird.
-	* **Display**
-		Das Display ist ein e-Paper-Display, das Scharz/Weiß und 4 Graustufen abbilden kann. Die Auflösung des Displays beträgt 400 x 300 Pixel. Die Pixeldichte auf die Anzeigefläche bezogen liegt bei 120 dpi. E-Paper-Displays benötigen nur bei der Ansteuerung neuer Bildinhalte Energie. Im ausgeschalteten Zustand bleibt der Bildinhalt sichtbar. Damit ist diese Bildschirm-Technologie sehr energiesparend.
-	* **Glue Film**
-		Der Klebefilm hinter dem Display dient zur Befestigung des Displays auf dem Displayhalter.
-	* **Display Holder**
-		Der Displayhalter trägt das e-Paper-Display und verhindert ein Verwinden des Displays. Das e-Paper-Display ist sehr empfindlich, denn es besteht aus zwei Glassubstraten mit einer Gesamtdicke von nur 0,7 mm. Über den Displayhalter wird das Display mittels Schrauben mit dem Mainboard verbunden.
-	* **Main Board**
-		Das Mainboard enthält alle elektronischen Komponenten auf einer zweiseitigen Platine. An der Oberseite des Mainboards ist die LED-Platine für die Hintergrundbeleuchtung angebracht.
-	* **Case Seal**
-		Die Gehäusedichtung stellt eine wasserdichte Verbindung zwischen der Front- und Rückschale her. Die Dichtung ist dabei als 1 mm dicke Flächendichtung ausgeführt.
-	* **Backside Case**
-		Die Gehäuserückschale schließt die Rückseite des Gehäuses ab. Sie ist als verwindungssteife Kastenkonstruktion wie die Frontschale ausgeführt.
-	* **Backside Seal**
-		Die Rückwanddichtung dichtet das Gehäuse gegenüber der Einbauöffnung ab. Die Dichtung besteht aus 2 mm dickem Neoprenmaterial. Damit lassen sich kleine Unebenheiten und leichte Krümmungen überbrücken.
-	* **Connectors**
-		Für eine einfachen Montage sind an der Rückseite des Gerätes abnehmbare Steckverbinder angebracht. Über die Steckverbinder mit Schraubverbindungen kann das Gerät mit Strom versorgt und an die Bussysteme angeschlossen werden.
+	* **Windfahne mit Spitze und Abdeckung**
+		Die Windfahne mit Spitze dient zur Richtungsmessung und Anzeige des Windes. Die Senkkopfschraube mit einem Würfelmagnet ist starr mit der Windfahne und der Abdeckung verbunden und wird durch ein Kugellager drehbar in den oberen beiden Gehäuseschalen gehalten. Die Abdeckung verhindert das indrigen von Spritzwasser. Die Spitze ist über ein Wewinde mit der Windfahne verbunden. Durch herein- und herausdrehen der Spitze ist die Balance der Windfahne einstellbar. Der Magnet an der Senkkopfschraube überträgt die Windrichtung berührungslos zum Drehrichtungssenso, der sich mittig auf der darunter liegenden Platine befindet.
+	* **Obere Gehäuseschalen**
+		Die oberen beiden Gehäuseschalen sind starr miteinander mit Schrauben verbunden und fixieren das obere Kugellager für die drehbare Windfahne.
+	* **Untere Gehäuseschale**
+		Die untere Gehäuseschale ist das zentrale Elemennt an dem alle anderen Teile befestigt werden. Die Unterschale hat ein Loch für den Befestigungsstab mit dem der Windsensor am Mast des Bootes befstigt wird. In der Unterschale befindet sich auch das Mainbord. 
+	* **Mainboard**
+		Das Mainboard enthält alle elektronischen Komponenten.
+	* **Magnetkranz mit Schalenrad und Unterteil mit Kugellagern**
+		Der Magnetkranz mit Schalenrad und das Unterteil mit Kugellagern bilden eine Einheit zur Messung der Windgeschwindigkeit. Der magnetkranz enthält vier Magnete mit wechselnder Polarität. Das Magnetfeld der Magnete durchdringt die Platine des Mainbords und löst den Hallsensor auf der Oberseite der Platine aus, wenn sich ein Magnet am Hallsensor vorbeidreht. Die Magnetfelder der Windgeschwindigkeit und der Windrichtung sind so ausgelegt, dass sie sich nicht gegenseitig beeinflussen. Der Magnetkranz ist starr mit dem Schalenrad verbunden und die Drehbewegung überträgt sich auf damit auf den Magnetkranz. Die lange Welle in Form einer Schraube wird mit zwei Kugellagern im unteren Schaft gehalten, der starr mit der Unterschale verbunden ist.
+	* **Halterohr**
+		Das Halterohr verbindet den Windsensor miot dem Befestigungsfuß. Im Halterohr werden auch die Kabel für die Stromversorgung durchgeführt.
+	* **Befestigungsfuß**
+		Mit dem befestigungsfuß wird der Windsensor am Mast befestigt. An ihm treten die höchsten Kräfte auf und er muss entsprechend stabil konstruiert sein.
+	
 		
 Main Board
 ----------
 
 Das Mainboard enthält alle elektrischen und elektronischen Komponenten wie:
 
-	* Dual Core CPU ESP32-S3
-	* Stromversorgung
-	* Display-Ansteuerung
-	* Sensortasten
-	* GPS-Empfänger
-	* RTC Echtzeituhr
-	* Backup-Batterie
-	* Buzzer
-	* Flash-LED
-	* Hintergrundbeleuchtung
-	* Isolierte Treiber für Bussysteme (NMEA2000; NMEA0183, I2C)
-	* externe Stromversorgung
-	* ESD-Schutzschaltungen
-	* USB-C
+	* DC/DC Wandler 12V auf 3.3V
+	* Verpolungsschutz und Überspannungsschutz
+	* Rotationssensor für Windrichtungsmessung
+	* Hall-Sensor für Windgeschwindigkeit
+	* Mikrocontroller zur Messdatenauswertung und Datenübertrgung
 
-.. image:: ../pics/PCB_Top_Side_Named.png
-   :scale: 45%
+.. image:: ../pics/Yachta_BCP_V2.1.png
+   :scale: 30%
 Abb.: Mainboard Oberseite
-
-.. image:: ../pics/PCB_Bottom_Side_Named.png
-   :scale: 45%
-Abb.: Mainboard Unterseite
 
 Platinen
 --------
 
-Die Platinen für das Mainboard und die Hintergrundbeleuchtung wurden als zweiseitig bestückte SMD-Platine mit Durchkontaktierungen, Stopplack und Bedruckung ausgeführt.
+Die Platinen für das Mainboard und die Hintergrundbeleuchtung wurden als zweiseitig bestückte SMD-Platine mit Durchkontaktierungen, Stopplack, Bedruckung und vergoldeten Kontaktflächen ausgeführt.
 
-.. image:: ../pics/PCB_Empty_Top_Side.png
-   :scale: 45%
+.. image:: ../pics/PCB_Yachta_V2.1_Top.png
+   :scale: 70%
 Abb.: Unbestückte Platinen-Oberseite
 
-.. image:: ../pics/PCB_Empty_Bottom_Side.png
-   :scale: 45%
+.. image:: ../pics/PCB_Yachta_V2.1_Bot.png
+   :scale: 70%
 Abb.: Unbestückte Platinen-Unterseite
 
 Schaltplan und Fertigungsdaten
