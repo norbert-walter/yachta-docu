@@ -99,7 +99,7 @@ Nehmen Sie folgende Einstellungen vor:
 +---------------------------+---------------------+
 |Einstellung                |OBP60                |
 +===========================+=====================+
-|:ref:`Config - System`     |                     |
+|`Config - System`_         |                     |
 +---------------------------+---------------------+
 |System Name                |OBP60V2              |
 +---------------------------+---------------------+
@@ -111,11 +111,11 @@ Nehmen Sie folgende Einstellungen vor:
 +---------------------------+---------------------+
 |WiFi Client Password       |MySecret             |
 +---------------------------+---------------------+
-|:ref:`Config - Converter   |                     |
+|`Config - Converter`_      |                     |
 +---------------------------+---------------------+
 |NMEA2000 Out               |on                   |
 +---------------------------+---------------------+
-|:ref:`Config - TCP Server` |                     |
+|`Config - TCP Server`_     |                     |
 +---------------------------+---------------------+
 |TCP Port                   |10110                |
 +---------------------------+---------------------+
@@ -127,7 +127,7 @@ Nehmen Sie folgende Einstellungen vor:
 +---------------------------+---------------------+
 |SeaSmart Out               |on                   |
 +---------------------------+---------------------+
-|:ref:`Config - TCP Client` |                     |
+|`Config - TCP Client`_     |                     |
 +---------------------------+---------------------+
 |Enable                     |on                   |
 +---------------------------+---------------------+
@@ -141,6 +141,12 @@ Nehmen Sie folgende Einstellungen vor:
 +---------------------------+---------------------+
 |SeaSamart Out              |off                  |
 +---------------------------+---------------------+
+
+.. _Config - System: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-system
+.. _Config - Converter: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-wifi-client
+.. _Config - TCP Server:https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-tcp-server
+.. _Config - TCP Client: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-tcp-client
+
 
 Nach der Konfiguration sollten Sie im Status nachfolgende Informationen sehen. Das OBP60 ist als WiFi-Client beim LTE-Router angemeldet und hat die IP-Adresse 192.168.1.101 zugewiesen bekommen. Das OBP60 ist als TCP-Client mit dem Windsensor Yachta verbunden. Über diese Verbindung werden Winddaten als NMEA0183-Telegramme empfangen. Unter Clients werden die Anzahl der Geräte angezeigt, die als TCP-Client mit dem OBP60 verbunden sind. Wenn das Tablet mit dem OBP60 verbunden ist, sollte ein Gerät angezeigt werden. Der NMEA2000-Status wird als Online angezeigt, wenn Daten mit dem NMEA2000-Bus ausgetauscht werden. Die Anzahl der ausgetauschten NMEA2000-Telegramme sieht man unter NMEA2000 In/Out. Wenn ein Tablett mit dem OBP60 per TCP verbunden ist, sieht man die Anzahl der ausgetauschten NMEA0183-Telegramme unter TCP In/Out.
 
