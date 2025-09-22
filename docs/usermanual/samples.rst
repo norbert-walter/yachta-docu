@@ -144,7 +144,7 @@ Nehmen Sie folgende Einstellungen vor:
 
 .. _Config - System: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-system
 .. _Config - Converter: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-wifi-client
-.. _Config - TCP Server:https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-tcp-server
+.. _Config - TCP Server: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-tcp-server
 .. _Config - TCP Client: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-tcp-client
 
 
