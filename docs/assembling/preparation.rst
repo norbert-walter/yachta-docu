@@ -1,6 +1,8 @@
 Vorbereitung
 ============
 
+Eine gute Projektvorbereitung ist unerlässlich, damit Sie nicht mitten im Projekt feststellen, dass einige Teile fehlen und noch besorgt werden müssen. Nehmen Sie sich die Zeit und gehen Sie die Listen durch.  
+
 Schwierigleitsgrad und Zeitbedarf
 ---------------------------------
 
@@ -36,7 +38,7 @@ Wer die Elektronik zusammen löten möchte, sollte über Erfahrung in der Bestü
 Werkzeuge und Hilfsmittel
 -------------------------
 +----------------------------+----------------------------------+
-| **Werkzeuge**              | Verwendung                       |
+| **Werkzeuge**              | **Verwendung**                   |
 +----------------------------+----------------------------------+
 | Säge                       |                                  |
 +----------------------------+----------------------------------+
