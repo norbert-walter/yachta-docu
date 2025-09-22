@@ -11,19 +11,19 @@ Abb.: Komponentenansicht
 In der oberen Abbildung ist der Aufbau des Windsensor Yachta zu sehen. Das Gerät besteht aus einzelnen Komponenten, die im folgenden beschrieben werden.
 
 	* **Windfahne mit Spitze und Abdeckung**
-		Die Windfahne mit Spitze dient zur Richtungsmessung und Anzeige des Windes. Die Senkkopfschraube mit einem Würfelmagnet ist starr mit der Windfahne und der Abdeckung verbunden und wird durch ein Kugellager drehbar in den oberen beiden Gehäuseschalen gehalten. Die Abdeckung verhindert das indrigen von Spritzwasser. Die Spitze ist über ein Wewinde mit der Windfahne verbunden. Durch herein- und herausdrehen der Spitze ist die Balance der Windfahne einstellbar. Der Magnet an der Senkkopfschraube überträgt die Windrichtung berührungslos zum Drehrichtungssenso, der sich mittig auf der darunter liegenden Platine befindet.
+		Die Windfahne mit Spitze dient zur Richtungsmessung und Anzeige des Windes. Die Senkkopfschraube mit einem Würfelmagnet ist starr mit der Windfahne und der Abdeckung verbunden und wird durch ein Kugellager drehbar in den oberen beiden Gehäuseschalen gehalten. Die Abdeckung verhindert das eindrigen von Spritzwasser. Die Spitze ist über ein Gewinde mit der Windfahne verbunden. Durch herein- und herausdrehen der Spitze ist die Balance der Windfahne einstellbar. Der Magnet an der Senkkopfschraube überträgt die Windrichtung berührungslos zum Drehrichtungssensor, der sich mittig auf der darunter liegenden Platine befindet.
 	* **Obere Gehäuseschalen**
 		Die oberen beiden Gehäuseschalen sind starr miteinander mit Schrauben verbunden und fixieren das obere Kugellager für die drehbare Windfahne.
 	* **Untere Gehäuseschale**
-		Die untere Gehäuseschale ist das zentrale Elemennt an dem alle anderen Teile befestigt werden. Die Unterschale hat ein Loch für den Befestigungsstab mit dem der Windsensor am Mast des Bootes befstigt wird. In der Unterschale befindet sich auch das Mainbord. 
+		Die untere Gehäuseschale ist das zentrale Element an dem alle anderen Teile befestigt werden. Die Unterschale hat ein Loch für den Befestigungsstab mit dem der Windsensor  über den Befestigungsfuß am Mast des Bootes verbunden ist. In der Unterschale befindet sich auch das Mainboard. 
 	* **Mainboard**
 		Das Mainboard enthält alle elektronischen Komponenten.
 	* **Magnetkranz mit Schalenrad und Unterteil mit Kugellagern**
-		Der Magnetkranz mit Schalenrad und das Unterteil mit Kugellagern bilden eine Einheit zur Messung der Windgeschwindigkeit. Der magnetkranz enthält vier Magnete mit wechselnder Polarität. Das Magnetfeld der Magnete durchdringt die Platine des Mainbords und löst den Hallsensor auf der Oberseite der Platine aus, wenn sich ein Magnet am Hallsensor vorbeidreht. Die Magnetfelder der Windgeschwindigkeit und der Windrichtung sind so ausgelegt, dass sie sich nicht gegenseitig beeinflussen. Der Magnetkranz ist starr mit dem Schalenrad verbunden und die Drehbewegung überträgt sich auf damit auf den Magnetkranz. Die lange Welle in Form einer Schraube wird mit zwei Kugellagern im unteren Schaft gehalten, der starr mit der Unterschale verbunden ist.
+		Der Magnetkranz mit Schalenrad und das Unterteil mit Kugellagern bilden eine Einheit zur Messung der Windgeschwindigkeit. Der Magnetkranz enthält vier Magnete mit wechselnder Polarität. Das Magnetfeld der Magnete durchdringt die Platine des Mainbords und löst den Hallsensor auf der Oberseite der Platine aus, wenn sich ein Magnet am Hallsensor vorbeidreht. Die Magnetfelder der Windgeschwindigkeit und der Windrichtung sind so ausgelegt, dass sie sich nicht gegenseitig beeinflussen. Der Magnetkranz ist starr mit dem Schalenrad verbunden und die Drehbewegung überträgt sich damit auf den Magnetkranz. Die lange Welle in Form einer Schraube wird mit zwei Kugellagern im unteren Schaft gehalten, der starr mit der Unterschale verbunden ist.
 	* **Halterohr**
-		Das Halterohr verbindet den Windsensor miot dem Befestigungsfuß. Im Halterohr werden auch die Kabel für die Stromversorgung durchgeführt.
+		Das Halterohr verbindet den Windsensor mit dem Befestigungsfuß. Im Halterohr werden auch die Kabel für die Stromversorgung durchgeführt.
 	* **Befestigungsfuß**
-		Mit dem befestigungsfuß wird der Windsensor am Mast befestigt. An ihm treten die höchsten Kräfte auf und er muss entsprechend stabil konstruiert sein.
+		Mit dem Befestigungsfuß wird der Windsensor am Mast befestigt. An ihm treten die höchsten Kräfte auf und er muss entsprechend stabil konstruiert sein.
 	
 		
 Main Board
@@ -35,7 +35,7 @@ Das Mainboard enthält alle elektrischen und elektronischen Komponenten wie:
 	* Verpolungsschutz und Überspannungsschutz
 	* Rotationssensor für Windrichtungsmessung
 	* Hall-Sensor für Windgeschwindigkeit
-	* Mikrocontroller zur Messdatenauswertung und Datenübertrgung
+	* Mikrocontroller zur Messdatenauswertung und Datenübertragung
 
 .. image:: ../pics/Yachta_BCP_V2.1.png
    :scale: 30%
@@ -82,11 +82,11 @@ Abb.: Schaltplan Yachta V2.1
 Am Kontaktfeld J1 liegen alle notwendigen Signale zum betrieb des Windsensors an. Das sind die Eingänge für die Versorgungsspannung (+12V, GND) als auch die Anschlüsse für die Programmierung des Mikrocontrollers (PRG) als auch die Signale zur Datenübertragung (RX, TX).
 
 .. danger::
-	Beachten Sie, dass die Signale PRG, RX und TX nur mit 3.3V TTL-Pegeln betreiebn werden dürfen. Benutzen Sie entsprechende Pegelkonverter, wenn sie andere Signalpegel verwenden. Kommen die Kontakte mit 12V in Verbindung, so wird der Mikrocontroller U2 zerstört. Achten Sie darauf, dass keine leitenden Gegenstände auf die Platine fallen oder sich unter der Leiterplatte befinden. Insbesomndere bei der Verwendung von Litzen können schnell einzelne Adern abbrechen und herunterfallen.
+	Beachten Sie, dass die Signale PRG, RX und TX nur mit 3.3V TTL-Pegeln betreiben werden dürfen. Benutzen Sie entsprechende Pegelkonverter, wenn sie andere Signalpegel verwenden. Kommen die Kontakte mit 12V in Verbindung, so wird der Mikrocontroller U2 zerstört. Achten Sie darauf, dass keine leitenden Gegenstände auf die Platine fallen oder sich unter der Leiterplatte befinden. Insbesondere bei der Verwendung von Litzen können schnell einzelne Adern abbrechen und herunterfallen.
 
-Die Bauelemente U5 und D2 schützen die Schaltung vor Überspannung und D1 dient als Verpolungsschutz	der Betriebsspannung. Die nachfolgenden Bauelemente von C1 über U1 bis zu C6 bilden den DC/DC-Wandler. Er wandelt die Eingangsspannung von 7...25V DC ind eine Ausgangsspannung von 3.3V. Diese Spannung versorgt die ICs U2, U3 und U4. U2 ist der Mikrocontroller ESP8266. Am Eingang IO14 liegt ein digitales Pulssignal an, mit dem die Windgeschwindigkeit gemessen wird. Das Pulssignal wird vom Hall-Sensor U6 oder alternativ vom Hallsensor Q3 bereitgestellt.
+Die Bauelemente U5 und D2 schützen die Schaltung vor Überspannung und D1 dient als Verpolungsschutz	der Betriebsspannung. Die nachfolgenden Bauelemente von C1 über U1 bis zu C6 bilden den DC/DC-Wandler. Er wandelt die Eingangsspannung von 7...25V DC in eine Ausgangsspannung von 3.3V. Diese Spannung versorgt die ICs U2, U3 und U4. U2 ist der Mikrocontroller ESP8266. Am Eingang IO14 liegt ein digitales Pulssignal an, mit dem die Windgeschwindigkeit gemessen wird. Das Pulssignal wird vom Hall-Sensor U6 oder alternativ vom Hallsensor Q3 bereitgestellt.
 
 .. tip::
 	Wer einen älteren Yachta-Windsensor-Aufbau mit kleinen Magneten im Magnetkranz benutzt, kann alternativ Q3 anstatt U6 verwenden. Dazu ist ein entsprechender Hallsensor an Position Q3 einzulöten.
 
-Die Ausgaänge der Hall-Sensoren sind Low-aktiv und werden über einen internen Pullup-Widerstand im Mikrocontroller U2 mit 3.3V versorgt. Der Drehrichtungssensor U3 ist über IO4 und IO5 über den I2C-Bus mit dem Mikrocontroller U3 verbunden. R9 und R10 sind Pullup-Widerstände zur Signalformung. Über den Lötjumper SJ1 lässt sich auswählen welcher Sensortyp für U3 verwendet wird. Standardmäßig wird ein MT6701CT verwendet. Es wird dann eine Lötbrücke zwischen dem oberen und mittleren Anschluß benötigt. Als Alternative kann ein AS5600 verwendet werden. Dann muss sich die Lötbrücke zwischen dem mittleren und unteren Anschluß befinden. Der Temperatursensor U2 in Form eines DS18B20 ist über den 1Wire-Bus an IO12 mit dem Mikrocontroller verbunden.
+Die Ausgänge der Hall-Sensoren sind Low-aktiv und werden über einen internen Pullup-Widerstand im Mikrocontroller U2 mit 3.3V versorgt. Der Drehrichtungssensor U3 ist über IO4 und IO5 über den I2C-Bus mit dem Mikrocontroller U3 verbunden. R9 und R10 sind Pullup-Widerstände zur Signalformung. Über den Lötjumper SJ1 lässt sich auswählen welcher Sensortyp für U3 verwendet wird. Standardmäßig wird ein MT6701CT verwendet. Es wird dann eine Lötbrücke zwischen dem oberen und mittleren Anschluss benötigt. Als Alternative kann ein AS5600 verwendet werden. Dann muss sich die Lötbrücke zwischen dem mittleren und unteren Anschluss befinden. Der Temperatursensor U2 in Form eines DS18B20 ist über den 1Wire-Bus an IO12 mit dem Mikrocontroller verbunden.
