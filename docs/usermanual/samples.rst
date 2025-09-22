@@ -153,7 +153,7 @@ Nach der Konfiguration sollten Sie im Status nachfolgende Informationen sehen. D
 +---------------------------+---------------------+
 |Statusmeldungen            |OBP60                |
 +===========================+=====================+
-|:ref:`Status`              |                     |
+|`Status`_                  |                     |
 +---------------------------+---------------------+
 |WiFi Client Connected      |true                 |
 +---------------------------+---------------------+
@@ -171,6 +171,8 @@ Nach der Konfiguration sollten Sie im Status nachfolgende Informationen sehen. D
 +---------------------------+---------------------+
 |TCP Out                    |Telegrammeanzahl     |
 +---------------------------+---------------------+
+
+.. _Status: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#status
 
 Die Verbindung des OBP60 mit dem NMEA2000-Netzwerk erfolgt wie im nachfolgenden Bild angezeigt. Ist das OBP60 ein normaler Teilnehmer des Bussystems, so muss die Terminierung deaktiviert sein.
 
