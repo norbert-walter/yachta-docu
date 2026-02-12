@@ -163,12 +163,12 @@ Firmware Installation
 Die Installation der Firmware auf dem ESP12-E kann vor dem Einlöten mit einem Programmieradapter oder auch auf der fertig bestückten Platine erfolgen.
 
 .. image:: ../pics/ESP8266_Programmer_3-300x244.png
-   :scale: 50%
+   :scale: 80%
    
 Abb: ESP8266 Programmieradapter für externe Programmierung
 
 .. image:: ../pics/RS232_USB_3.3V_3-300x170.png
-   :scale: 50%
+   :scale: 80%
    
 Abb: Programmieradapter für Programmierung auf der Platine
 
@@ -228,9 +228,9 @@ Um die neue Firmware zu starten, benötigt der Windsensor einen Reboot. Nach dem
    :class: borderless
 
    * - .. image:: ../pics/AppStart-169x300.png
-          :scale: 30%
+          :scale: 80%
      - .. image:: ../pics/AppInstrument1-169x300.png
-          :scale: 30%  
+          :scale: 80%  
 
 Als letztes muss in der Firmware noch der richtige Windsensor-Typ Yachta in der Konfiguration ausgewählt werden, damit die Daten korrekt angezeigt werden.
 
@@ -244,8 +244,8 @@ Abb: Device Settings für Yachta
    :class: borderless
 
    * - .. image:: ../pics/Yachta2-290x300.png
-          :scale: 50%
+          :scale: 80%
      - .. image:: ../pics/Yachta_1-230x300.png
-          :scale: 50%
+          :scale: 80%
 
 Abb: Messwerte für Yachta
