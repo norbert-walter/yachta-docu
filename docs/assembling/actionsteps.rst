@@ -95,9 +95,9 @@ Der Unterbau der Windfahne besteht aus einem Ober- und einem Unterteil. In die O
    :class: borderless
 
    * - .. image:: ../pics/Top1_Bearings.png
-          :scale: 30%
+          :scale: 50%
      - .. image:: ../pics/Top1_Top2_Bearings.png
-          :scale: 30%
+          :scale: 50%
 
 Abb.: Windfahnenbasis des Yachtasensors
 
@@ -174,7 +174,7 @@ Abb: Programmieradapter für Programmierung auf der Platine
 
 Bei Verwendung eines Programmieradapters für die Programmierung auf der Platine ist darauf zu achten, dass die Signalpegel für TX und RX 3.3V TTL-Pegel unterstützen. 5.0V TTL-Pegel können nicht genutzt werden, da der ESP12-E damit beschädigt werden kann. Der Programmieradapter ist wie im Bild dargestellt anzuschließen. Man muss darauf achten, dass RX mit TX und TX mit RX verbunden sind. Anderenfalls kann man sonst keine Programmübertragung durchführen.
 
-.. image:: ../pics/SProgrammierschaltung_Yachta.png
+.. image:: ../pics/Programmierschaltung_Yachta.png
    :scale: 50%
 
 Abb: Programmierschaltung
@@ -197,27 +197,27 @@ Abb: Programmierschaltung
 Als Programmiersoftware für den ESP12-E kann das einfach zu benutzende Windows Tool NodeMCU Flasher verwendet werden. Die EXE-Datei kann ohne spezielle Installation direkt gestartet werden. Das Tool kann sowohl für die externe als auch für die Programmierung in der Schaltung verwendet werden. Als erstes werden unter Advanced folgende Einstellungen vorgenommen.
 
 .. image:: ../pics/NodeMCU_Flasher_1.png
-   :scale: 50%
+   :scale: 80%
 
 Danach wird unter Config die aktuelle Firmwaredatei firmware_Vx.xx.wsb ausgewählt.
 
 .. image:: ../pics/NodeMCU_Flasher_2.png
-   :scale: 50%
+   :scale: 80%
 
 Zum Flashen geht man auf Operation und wählt die entsprechende Schnittstelle aus an der der Adapter angeschlossen ist. Danach drückt man auf Flash und wartet ab, bis die Firmware geladen ist.
 
 .. image:: ../pics/NodeMCU_Flasher_3.png
-   :scale: 50%
+   :scale: 80%
 
 Während des Flashens wird der Fortschritt der Übertragung angezeigt.
 
 .. image:: ../pics/NodeMCU_Flasher_4.png
-   :scale: 50%
+   :scale: 80%
 
 Wenn die Firmware erfolgreich geladen wurde, ist folgender Bildschirm zu sehen.
 
 .. image:: ../pics/NodeMCU_Flasher_5.png
-   :scale: 50%
+   :scale: 80%
 
 Nach der Übertragung kann das Programmiertool geschlossen und der Adapter abgezogen werden.
 
@@ -230,14 +230,12 @@ Um die neue Firmware zu starten, benötigt der Windsensor einen Reboot. Nach dem
    * - .. image:: ../pics/AppStart-169x300.png
           :scale: 30%
      - .. image:: ../pics/AppInstrument1-169x300.png
-          :scale: 30%
-	 - .. image:: ../pics/AppInstrument2-169x300.png
-          :scale: 30%	  
+          :scale: 30%  
 
 Als letztes muss in der Firmware noch der richtige Windsensor-Typ Yachta in der Konfiguration ausgewählt werden, damit die Daten korrekt angezeigt werden.
 
 .. image:: ../pics/Yachta3.png
-   :scale: 50%
+   :scale: 80%
 
 Abb: Device Settings für Yachta
 
@@ -246,8 +244,8 @@ Abb: Device Settings für Yachta
    :class: borderless
 
    * - .. image:: ../pics/Yachta2-290x300.png
-          :scale: 30%
+          :scale: 50%
      - .. image:: ../pics/Yachta_1-230x300.png
-          :scale: 30%
+          :scale: 50%
 
 Abb: Messwerte für Yachta
