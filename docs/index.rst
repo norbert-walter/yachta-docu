@@ -46,7 +46,7 @@ Der Windsensopr Yachta ist so konzipiert, dass er als DIY-Projekt nachgebaut wer
    Geräteaufbau <assembling/device>
    Vorbereitung <assembling/preparation>
    Bauteilliste <assembling/partlist>
-   Durchführung <assembling/actionsteps>
+   Montage <assembling/actionsteps>
    Funktionstest <assembling/tests>
   
 .. toctree::

@@ -1,5 +1,5 @@
-Durchführung
-============
+Montage
+=======
 
 Für den mechanischen Zusammenbau gibt es im GitLab Repository eine `Bildergalerie`_ als Zip-File die man sich herunterladen kann. Die Bilder sind recht hilfreich und zeigen detailliert wie man vorgehen sollte. Nachfolgend ist eine Röntgenaufnahme zu sehen wie die internen Teile verbaut sind.
 
@@ -232,20 +232,9 @@ Um die neue Firmware zu starten, benötigt der Windsensor einen Reboot. Nach dem
      - .. image:: ../pics/AppInstrument1-169x300.png
           :scale: 80%  
 
-Als letztes muss in der Firmware noch der richtige Windsensor-Typ Yachta in der Konfiguration ausgewählt werden, damit die Daten korrekt angezeigt werden.
+Als letztes muss in der Firmware noch der richtige **Wind Sensor Typ** Yachta in der Konfiguration ausgewählt werden, damit die Daten korrekt angezeigt werden.
 
 .. image:: ../pics/Yachta3.png
    :scale: 80%
 
 Abb: Device Settings für Yachta
-
-.. list-table::
-   :widths: 50 50
-   :class: borderless
-
-   * - .. image:: ../pics/Yachta2-290x300.png
-          :scale: 80%
-     - .. image:: ../pics/Yachta_1-230x300.png
-          :scale: 80%
-
-Abb: Messwerte für Yachta
