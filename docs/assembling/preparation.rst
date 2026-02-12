@@ -29,7 +29,7 @@ Die Zusammenbauanleitung richtet sich an Interessierte mit handwerklichen Fähig
 
 * Nachbearbeitung der 3D-Teile
 * Ablängen des Halterohres
-* Abisolieren und anlöten ver Versorgungskabel
+* Abisolieren und anlöten der Versorgungskabel
 * Zusammenbau der Mechanikteile
 * Lackieren der Kunststoffteile
 
